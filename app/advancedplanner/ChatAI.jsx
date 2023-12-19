@@ -2,23 +2,6 @@
 import React, { useState, useEffect } from "react";
 import Advance from "./Advance";
 
-function inRaTuTu(html, tocDo) {
-  var index = 0;
-  var length = html.length;
-  var outputElement = document?.getElementById("outputCalcutelateElix");
-
-  function hienThiKyTu() {
-    if (index < length) {
-      outputElement.innerHTML += html[index];
-      index++;
-      setTimeout(hienThiKyTu, tocDo);
-    }
-  }
-
-  // Bắt đầu hiển thị ký tự đầu tiên
-  hienThiKyTu();
-}
-
 export default function ChatAI() {
   const [option, setOption] = useState(0);
   return (
